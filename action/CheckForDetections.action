@@ -1,0 +1,11 @@
+# Check for detections  in image
+
+# Goal definition
+sensor_msgs/Image image
+
+---
+# Result definition
+object_detector_msgs/Detections detections
+
+---
+# Feedback definition
