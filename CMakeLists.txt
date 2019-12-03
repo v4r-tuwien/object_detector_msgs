@@ -22,6 +22,7 @@ add_message_files(
 add_service_files(FILES
   start.srv
   stop.srv
+  detectron2_service_server.srv
 )
 
 add_action_files(FILES
