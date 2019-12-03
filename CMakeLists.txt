@@ -16,6 +16,7 @@ add_message_files(
   BoundingBox.msg
   Detection.msg
   Detections.msg
+  PoseWithConfidence.msg
 )
 
 # Declare the service files to be built
@@ -23,6 +24,8 @@ add_service_files(FILES
   start.srv
   stop.srv
   detectron2_service_server.srv
+  estimate_poses.srv
+  refine_poses.srv
 )
 
 add_action_files(FILES
