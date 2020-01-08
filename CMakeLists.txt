@@ -26,6 +26,7 @@ add_service_files(FILES
   detectron2_service_server.srv
   estimate_poses.srv
   refine_poses.srv
+  get_poses.srv
 )
 
 add_action_files(FILES
