@@ -1,0 +1,3 @@
+object_detector_msgs/Detection detection
+---
+PoseStWithConfidence[] poses

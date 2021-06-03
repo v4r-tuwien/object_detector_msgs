@@ -16,7 +16,8 @@ add_message_files(
   BoundingBox.msg
   Detection.msg
   Detections.msg
-  PoseWithConfidence.msg
+  PoseWithConfidence.msg  
+  PoseStWithConfidence.msg
 )
 
 # Declare the service files to be built
@@ -27,6 +28,9 @@ add_service_files(FILES
   estimate_poses.srv
   refine_poses.srv
   get_poses.srv
+  estimate_poses_st.srv
+  refine_poses_st.srv
+  get_poses_st.srv
 )
 
 add_action_files(FILES
