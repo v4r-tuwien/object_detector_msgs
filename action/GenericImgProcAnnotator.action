@@ -1,0 +1,32 @@
+#goal
+sensor_msgs/Image rgb
+sensor_msgs/Image depth
+string description
+
+---
+#result
+bool success
+string result_feedback
+
+# A list of bounding boxes for all detected objects
+sensor_msgs/RegionOfInterest[] bounding_boxes
+
+# Class IDs for each entry in bounding_boxes
+int32[] class_ids
+
+# Class confidence for each entry in bounding_boxes
+float32[] class_confidences
+
+# An image that can be used to send preprocessed intermediate results,
+# inferred segmentation masks or maybe even a result image, depending on the use case
+sensor_msgs/Image image
+
+# The best pose for each entry in bounding_boxes
+geometry_msgs/Pose[] pose_results
+
+# Array-based string feedback when generating text for all detected objects etc.
+string[] descriptions
+
+---
+#feedback
+string feedback
