@@ -35,6 +35,7 @@ add_service_files(FILES
 
 add_action_files(FILES
   CheckForDetections.action
+  GenericImgProcAnnotator.action
 )
 
 generate_messages(
