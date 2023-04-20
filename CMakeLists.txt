@@ -8,6 +8,7 @@ find_package(catkin REQUIRED
   std_msgs 
   actionlib_msgs 
   sensor_msgs
+  vision_msgs
 )
 
 # Declare the message files to be built
@@ -31,10 +32,12 @@ add_service_files(FILES
   estimate_poses_st.srv
   refine_poses_st.srv
   get_poses_st.srv
+  addBoxes.srv
 )
 
 add_action_files(FILES
   CheckForDetections.action
+  GenericImgProcAnnotator.action
 )
 
 generate_messages(
@@ -42,6 +45,7 @@ generate_messages(
   actionlib_msgs
   sensor_msgs
   std_msgs
+  vision_msgs
 )
 
 # Declare that this catkin package's runtime dependencies
