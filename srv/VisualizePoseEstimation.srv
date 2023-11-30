@@ -1,0 +1,3 @@
+sensor_msgs/Image rgb_image
+geometry_msgs/Pose[] model_poses # model poses in rgb frame
+string[] model_names # model names

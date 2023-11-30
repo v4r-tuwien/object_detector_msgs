@@ -33,6 +33,7 @@ add_service_files(FILES
   refine_poses_st.srv
   get_poses_st.srv
   addBoxes.srv
+  VisualizePoseEstimation.srv
 )
 
 add_action_files(FILES
